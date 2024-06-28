@@ -48,5 +48,17 @@
 
   .active a {
     background-color: #555;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
   }
 </style>
