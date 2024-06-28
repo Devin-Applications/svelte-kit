@@ -1,8 +1,8 @@
 <script>
-  export let name = 'John Doe';
-  export let email = 'john.doe@example.com';
-  export let company = 'Example Company';
-  export let phone = '123-456-7890';
+  export let name;
+  export let email;
+  export let company;
+  export let phone;
 </script>
 
 <div class="profile">
