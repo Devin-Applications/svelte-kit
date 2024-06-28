@@ -64,10 +64,14 @@
 <style>
   .contract-list {
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
   }
   th, td {
     padding: 10px;
@@ -85,6 +89,7 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   button:hover {
     background-color: #0056b3;
