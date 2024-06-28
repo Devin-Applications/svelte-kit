@@ -1,10 +1,31 @@
 <script>
   // Mock data for testing
-  const contracts = [
+  let contracts = [
     { id: 1, vendor: 'Vendor A', startDate: '2023-01-01', endDate: '2023-12-31', status: 'Active' },
     { id: 2, vendor: 'Vendor B', startDate: '2023-02-01', endDate: '2023-11-30', status: 'Pending' },
     { id: 3, vendor: 'Vendor C', startDate: '2023-03-01', endDate: '2023-10-31', status: 'Expired' }
   ];
+
+  function viewContract(id) {
+    // Logic to view contract details
+    console.log(`Viewing contract ${id}`);
+  }
+
+  function editContract(id) {
+    // Logic to edit contract
+    console.log(`Editing contract ${id}`);
+  }
+
+  function deleteContract(id) {
+    // Logic to delete contract
+    contracts = contracts.filter(contract => contract.id !== id);
+    console.log(`Deleted contract ${id}`);
+  }
+
+  function createContract() {
+    // Logic to create a new contract
+    console.log('Creating new contract');
+  }
 </script>
 
 <div class="contract-list">
@@ -31,6 +52,7 @@
           <td>
             <button on:click={() => viewContract(contract.id)}>View</button>
             <button on:click={() => editContract(contract.id)}>Edit</button>
+            <button on:click={() => deleteContract(contract.id)}>Delete</button>
           </td>
         </tr>
       {/each}
@@ -68,20 +90,3 @@
     background-color: #0056b3;
   }
 </style>
-
-<script>
-  function viewContract(id) {
-    // Logic to view contract details
-    console.log(`Viewing contract ${id}`);
-  }
-
-  function editContract(id) {
-    // Logic to edit contract
-    console.log(`Editing contract ${id}`);
-  }
-
-  function createContract() {
-    // Logic to create a new contract
-    console.log('Creating new contract');
-  }
-</script>
