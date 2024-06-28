@@ -1,5 +1,5 @@
 <script>
-  import VendorRegistrationForm from './VendorRegistrationForm.svelte';
+  import VendorRegistrationForm from '../../components/VendorRegistrationForm.svelte';
 </script>
 
 <VendorRegistrationForm />
