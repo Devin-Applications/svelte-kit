@@ -1,5 +1,5 @@
 <script>
-  import VendorProfile from '../../components/VendorProfile.svelte';
+  import VendorProfile from '../components/VendorProfile.svelte';
 
   // Mock data for testing
   const profileData = {
