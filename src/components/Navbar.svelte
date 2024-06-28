@@ -1,9 +1,10 @@
 <script>
   import { page } from '$app/stores';
+  import { onMount } from 'svelte';
 
   let activeRoute = '';
 
-  $: if (page && page.url) {
+  $: if (typeof window !== 'undefined' && page && page.url) {
     activeRoute = page.url.pathname;
   }
 </script>
