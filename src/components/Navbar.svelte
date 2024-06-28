@@ -3,7 +3,7 @@
 
   let activeRoute = '';
 
-  $: if (page) {
+  $: if (page && page.url) {
     activeRoute = page.url.pathname;
   }
 </script>
