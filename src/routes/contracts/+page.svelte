@@ -1,4 +1,5 @@
 <script>
+  export const prerender = true;
   let contractName = '';
   let contractDetails = '';
 

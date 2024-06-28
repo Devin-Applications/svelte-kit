@@ -1,4 +1,6 @@
 <script>
+  export const prerender = true;
+
   let announcementTitle = '';
   let announcementDetails = '';
 
