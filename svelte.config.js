@@ -8,7 +8,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			out: 'build' // Specify the output directory for the build artifacts
+		}),
 		prerender: {
 			entries: [
 				'/',
