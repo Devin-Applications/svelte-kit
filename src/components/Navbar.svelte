@@ -3,7 +3,7 @@
 
   let activeRoute = '';
 
-  $: activeRoute = $page.url.pathname;
+  $: activeRoute = page.url.pathname;
 </script>
 
 <nav>
