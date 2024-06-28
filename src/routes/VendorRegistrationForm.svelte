@@ -3,10 +3,18 @@
   let email = '';
   let company = '';
   let phone = '';
+  let successMessage = '';
 
   function handleSubmit() {
-    // Handle form submission logic here
+    // Basic client-side validation
+    if (!name || !email || !company || !phone) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+    // Simulate form submission
     console.log('Form submitted:', { name, email, company, phone });
+    successMessage = 'Vendor registered successfully!';
   }
 </script>
 
@@ -29,6 +37,10 @@
   </div>
   <button type="submit">Register</button>
 </form>
+
+{#if successMessage}
+  <p>{successMessage}</p>
+{/if}
 
 <style>
   form {
@@ -62,5 +74,11 @@
 
   button:hover {
     background-color: #0056b3;
+  }
+
+  p {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
   }
 </style>
