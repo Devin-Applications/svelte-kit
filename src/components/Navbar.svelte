@@ -1,14 +1,9 @@
 <script>
-  import { onMount } from 'svelte';
   import { page } from '$app/stores';
 
   let activeRoute = '';
 
-  onMount(() => {
-    $page.subscribe(value => {
-      activeRoute = value.url.pathname;
-    });
-  });
+  $: activeRoute = $page.url.pathname;
 </script>
 
 <nav>
