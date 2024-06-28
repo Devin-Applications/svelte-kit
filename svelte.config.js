@@ -8,7 +8,18 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			entries: [
+				'/',
+				'/register',
+				'/profile',
+				'/contracts',
+				'/performance',
+				'/invoices',
+				'/announcements'
+			]
+		}
 	}
 };
 
